@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Rakibul Hasan</title>
+    <style>
+        /* Global Reset */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { 
+            background: #000; 
+            color: #fff; 
+            line-height: 1.6; 
+            overflow: hidden; 
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation */
+        nav { 
+            display: flex; 
+            justify-content: space-between; 
+            padding: 2rem 5%; 
+            align-items: center; 
+        }
+        .logo { font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav ul li a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 0.7rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            opacity: 0.6; 
+        }
+        nav ul li a.active { opacity: 1; border-bottom: 1px solid #fff; }
+
+        /* Content Layout */
+        .vertical-layout { 
+            display: flex; 
+            flex-direction: column; 
+            flex: 1; 
+            width: 100%; 
+            position: relative;
+        }
+
+        /* Vision Section (Top) */
+        .content-top { 
+            padding: 5rem 8% 0 8%; 
+        }
+        .section-title { font-size: 4rem; text-transform: uppercase; font-weight: 800; }
+        .intro-underline { width: 100px; height: 3px; background: #fff; margin: 1rem 0 2rem 0; }
+        .content-top p { max-width: 600px; font-size: 1.1rem; opacity: 0.8; }
+
+        /* 3-Column Skills Grid (Bottom) */
+        .mission-row-grid { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+            width: 100%;
+            min-height: 35vh; 
+            background: #000; 
+            margin-top: auto; /* Pushes grid to the bottom */
+            border-top: 1px solid #1a1a1a;
+        }
+
+        .grid-box { 
+            border-right: 1px solid #1a1a1a; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            padding: 2rem;
+        }
+        
+        /* Last box has no right border */
+        .grid-box:last-of-type { border-right: none; }
+
+        .grid-box h3 { 
+            font-size: 0.65rem; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+            color: #666; 
+            margin-bottom: 12px; 
+        }
+        .grid-box p { font-size: 0.95rem; font-weight: 600; }
+
+        /* Page Marker */
+        .page-marker { 
+            position: absolute; 
+            bottom: 1.5rem; 
+            right: 2rem; 
+            font-size: 0.7rem; 
+            letter-spacing: 3px; 
+            opacity: 0.4; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Rakibul Hasan</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="vertical-layout">
+        <div class="content-top">
+            <h2 class="section-title">Technical Vision</h2>
+            <div class="intro-underline"></div>
+            <p>Interested in building <strong>scalable backend systems</strong> and 
+<strong>AI-driven applications</strong> that transform data into meaningful insights.</p>
+        </div>
+
+        <div class="mission-row-grid">
+            <div class="grid-box">
+                <h3>Languages</h3>
+                <p>Python / C++ / Java</p>
+            </div>
+            <div class="grid-box">
+                <h3>Database</h3>
+                <p>MySQL / Relational / Django / HTML / CSS</p>
+            </div>
+            <div class="grid-box">
+                <h3>Tools</h3>
+                <p>Git / AI / Linux</p>
+            </div>
+        </div>
+
+        
+    </main>
+
+</body>
+</html>

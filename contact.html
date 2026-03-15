@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Rakibul Hasan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background: #000; color: #fff; height: 100vh; overflow: hidden; }
+
+        /* Navigation */
+        nav { display: flex; justify-content: space-between; padding: 2rem 5%; align-items: center; position: absolute; width: 100%; top: 0; z-index: 10; }
+        .logo { font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav ul li a { color: #fff; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6; }
+        nav ul li a.active { opacity: 1; border-bottom: 1px solid #fff; }
+
+        /* Split Layout */
+        .split-layout { display: flex; height: 100vh; width: 100%; }
+
+        /* Left Side: Thank You */
+        .left-side { 
+            flex: 1.2; 
+            background: #080808; /* Slightly different black */
+            display: flex; 
+            align-items: center; 
+            padding-left: 8%; 
+            border-right: 1px solid #1a1a1a;
+        }
+        .thank-you { font-size: 8rem; line-height: 0.9; font-weight: 900; text-transform: uppercase; }
+
+        /* Right Side: Reach Out */
+        .right-side { 
+            flex: 0.8; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            padding-left: 5%; 
+        }
+        .section-title { font-size: 3.5rem; text-transform: uppercase; font-weight: 800; margin-bottom: 0.5rem; }
+        .underline { width: 60px; height: 4px; background: #fff; margin-bottom: 3rem; }
+
+        /* Contact Details */
+        .contact-item { margin-bottom: 2.5rem; }
+        .contact-item h4 { font-size: 0.65rem; text-transform: uppercase; color: #555; letter-spacing: 2px; margin-bottom: 5px; }
+        .contact-item p, .contact-item a { font-size: 1.2rem; font-weight: 400; color: #fff; text-decoration: none; display: block; }
+        .contact-item a:hover { opacity: 0.7; }
+
+        /* Page Marker */
+        .page-marker { position: absolute; bottom: 2rem; right: 2rem; font-size: 0.7rem; letter-spacing: 3px; opacity: 0.4; }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Rakibul Hasan</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="split-layout">
+        <section class="left-side">
+            <h1 class="thank-you">Thank<br>You.</h1>
+        </section>
+
+        <section class="right-side">
+            <h2 class="section-title">Reach Out</h2>
+            <div class="underline"></div>
+
+            <div class="contact-item">
+                <h4>Email</h4>
+                <p>rakibulhasantopu45@gmail.com</p>
+            </div>
+
+            <div class="contact-item">
+                <h4>Phone</h4>
+                <p>+8801708908882</p>
+            </div>
+
+            <div class="contact-item">
+                <h4>Social</h4>
+                <a href="https://www.linkedin.com/in/rakibul-hasan-2262842a9" target="_blank">LinkedIn :  linkedin.com/in/rakibul-hasan-2262842a9</a>
+                <a href="https://github.com/rakibulhasantopu" target="_blank">GitHub :  github.com/rakibulhasantopu</a>
+            </div>
+        </section>
+
+        
+    </main>
+
+</body>
+</html>

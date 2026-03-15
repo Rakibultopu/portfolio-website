@@ -1,0 +1,55 @@
+/* Global Reset */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+body { background: #121212; color: #fff; line-height: 1.6; overflow-x: hidden; }
+
+/* Navigation */
+nav { display: flex; justify-content: space-between; padding: 2rem 5%; align-items: center; }
+.logo { font-weight: 900; text-transform: uppercase; letter-spacing: 2px; }
+nav ul { display: flex; list-style: none; gap: 2rem; }
+nav ul li a { color: #fff; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; opacity: 0.6; }
+nav ul li a.active { opacity: 1; border-bottom: 1px solid #fff; }
+
+/* Section Logic */
+.hero, .editorial-page, .vertical-layout { display: flex; height: 90vh; width: 100%; }
+.hero-left, .content-right { flex: 1; overflow: hidden; position: relative; }
+.hero-right, .content-left, .content-top { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0 8%; }
+
+/* Typography */
+h1 { font-size: clamp(4rem, 10vw, 8rem); line-height: 0.8; text-transform: uppercase; margin-bottom: 2rem; }
+h1 span { display: block; font-weight: 300; }
+.section-title { font-size: 4rem; text-transform: uppercase; font-weight: 800; }
+.intro-underline { width: 100px; height: 3px; background: #fff; margin: 1rem 0 2rem 0; }
+.page-marker { position: absolute; bottom: 2rem; right: 2rem; font-size: 0.7rem; letter-spacing: 3px; opacity: 0.4; }
+
+/* Grayscale for Profile only on Page 1 */
+.hero-left img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); }
+
+/* The Row Grid for Skills */
+.mission-row-grid { display: grid; grid-template-columns: repeat(4, 1fr); height: 30vh; background: #000; position: relative; }
+.grid-box { border: 1px solid #1a1a1a; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 1rem; }
+.grid-box h3 { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 2px; color: #555; margin-bottom: 5px; }
+.grid-box p { font-size: 0.9rem; font-weight: 600; }
+
+/* Contact Specifics */
+.black-bg { background: #000; }
+.thank-you { font-size: 7rem; line-height: 0.8; font-weight: 900; text-transform: uppercase; }
+
+/* Button specific class */
+.explore-btn { 
+    border: none;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+    /* Center aligning button on page using flex parent */
+    align-self: center; /* Horizontally center */
+    width: auto; /* Standard browser default, but explicitly setting ensures no full width */
+    margin-top: 2rem; /* Spacing below text block */
+    padding: 1rem 3rem; /* Adjusted padding - significantly choto padding-left and padding-right */
+}
